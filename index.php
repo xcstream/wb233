@@ -20,10 +20,15 @@ if($ret === false){
     <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <p class="bg-success">1 新开了一个主机，https的哟(2016/03/24)</p>
-    <p class="bg-info">第<?echo $ssdb->get('count');?>次访问</p>
+    <div class="list-group">
+      <a href="/register.php" class="list-group-item">注册</a>
+      <a href="/login.php" class="list-group-item">登录</a>
+      <a href="#" class="list-group-item">待开发的功能</a>
   </div>
-  <div class="col-md-2"></div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
 
   <div>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -46,6 +51,8 @@ if($ret === false){
     <script src="https://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <div>
+
+      访问次数 <?echo $ret?>
     </div>
 
   </body>
